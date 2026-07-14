@@ -1,55 +1,79 @@
-
 # Database for Predicting Oxidation Resistance of Refractory High-Entropy Alloys
 
 ## Overview
 
-This repository contains the experimental database used in the study *"Advancing Refractory High-Entropy Alloy Development with AI-Predictive Models for High-Temperature Oxidation Resistance"*. The database was designed to train and validate machine learning models for predicting specific mass gain due to oxidation in Refractory High-Entropy Alloys (RHEAs) and Refractory Complex Concentrated Alloys (RCCAs). It is a valuable resource for researchers in materials science, particularly those focusing on high-temperature alloy applications.
+This repository contains the experimental database used in the study *"Advancing Refractory High-Entropy Alloy Development with AI-Predictive Models for High-Temperature Oxidation Resistance"*. The database was designed to train and validate machine learning models for predicting oxidation behavior in Refractory High-Entropy Alloys (RHEAs) and Refractory Complex Concentrated Alloys (RCCAs).
+
+The scope of this dataset is limited to **isothermal oxidation experiments conducted in air**. Non-isothermal oxidation tests, cyclic oxidation tests, and oxidation experiments performed under atmospheres other than air were not included, in order to maintain consistency across the compiled records.
+
+The dataset provides a coordinated and machine-readable compilation of oxidation data collected from published literature and is intended as a resource for researchers in materials science, particularly those focusing on high-temperature alloy design and oxidation resistance.
 
 ## Contents
 
-- `data/`
-  - `alloy_oxidation_886_202406.csv`: Contains the experimental data in CSV format.
-  - `alloy_oxidation_886_202406.json`: Contains the experimental data in JSON format.
-  - `data_analysis.ipynb`: A Jupyter notebook illustrating basic dataset statistics, distributions, and example data-loading workflows for exploratory analysis.
-- `README.md`: Documentation of the dataset.
+* `data/`
+
+  * `alloy_oxidation_886_202406.csv`: Contains the experimental data in CSV format.
+  * `alloy_oxidation_886_202406.json`: Contains the experimental data in JSON format.
+  * `data_analysis.ipynb`: A Jupyter notebook illustrating basic dataset statistics, distributions, and example data-loading workflows for exploratory analysis.
+* `README.md`: Documentation of the dataset.
 
 ## Dataset Description
 
 The database comprises **886 observations** from published literature, detailing the following parameters:
 
-1. **Alloy Composition**:
-   - Elements: Al, Cr, Hf, Mo, Nb, Si, Ta, Ti, V, W, Zr.
-   - Corresponding molar concentrations.
-2. **Oxidation Conditions**:
-   - Temperature (°C).
-   - Time (hours).
-3. **Target Property**:
-   - Specific mass gain due to oxidation (mg/cm²).
+1. **Alloy Identification**:
+
+   * A unique numerical alloy identifier assigned within the dataset.
+   * Original alloy formula or alloy name reported in the source publication.
+
+2. **Alloy Composition**:
+
+   * Elements: Al, Cr, Hf, Mo, Nb, Si, Ta, Ti, V, W, Zr.
+   * Corresponding molar concentrations.
+
+3. **Oxidation Conditions**:
+
+   * Temperature (°C).
+   * Time (hours).
+   * Isothermal oxidation in air.
+
+4. **Target Property**:
+
+   * Specific mass change due to oxidation (mg/cm²).
 
 ### File Details
 
 #### `alloy_oxidation_886_202406.csv` and `alloy_oxidation_886_202406.json`
 
-| Column Name           | Description                                                |
-|-----------------------|------------------------------------------------------------|
-| `alloy formula`       | Chemical formula of the alloy.                             |
-| `element`             | Molar concentrations of 11 elements (e.g., `Al`).          |
-| `Temperature (C)`     | Oxidation test temperature in °C.                          |
-| `time (h)`            | Oxidation duration in hours.                               |
-| `specific mass gain (mg/cm2)` | Specific mass gain during oxidation.                |
-| `source`              | Reference source for the data.                             |
+| Column Name                     | Description                                                                                                                                                                                                           |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Unique_Alloy_ID`               | Unique numerical identifier assigned to each alloy within the dataset. This identifier allows each material to be uniquely tracked, independent of the alloy names or formulas reported in the original publications. |
+| `alloy formula`                 | Chemical formula or alloy name reported in the original publication.                                                                                                                                                  |
+| `element`                       | Molar concentrations of 11 elements, including Al, Cr, Hf, Mo, Nb, Si, Ta, Ti, V, W, and Zr.                                                                                                                          |
+| `Temperature (C)`               | Isothermal oxidation test temperature in °C.                                                                                                                                                                          |
+| `time (h)`                      | Oxidation duration in hours.                                                                                                                                                                                          |
+| `specific mass change (mg/cm2)` | Net specific mass change measured after oxidation exposure.                                                                                                                                                           |
+| `source`                        | Reference source for the data.                                                                                                                                                                                        |
+
+## Notes on Data Interpretation
+
+The reported specific mass change values should be interpreted as **net mass changes** after oxidation exposure. For refractory alloys containing volatile oxide-forming elements, such as Mo, V, and to a lesser extent Ta and W, the measured mass change may reflect the combined effects of oxidation-induced mass gain and volatilization-induced mass loss. Therefore, low or even negative mass change values do not necessarily indicate superior oxidation resistance in all cases.
+
+Oxide scale thickness was not included as a standardized variable in this dataset because such information is not consistently reported across the collected literature. In addition, when scale thickness values are available, they may be affected by differences in measurement method, measurement location, oxide morphology, cracking, porosity, or spallation. These inconsistencies make systematic harmonization across different studies difficult.
 
 ## Usage
 
 The dataset can be used to:
-- Train machine learning models for predicting oxidation resistance in RHEAs and RCCAs.
-- Explore correlations between alloy composition, oxidation conditions, and oxidation resistance.
+
+* Train machine learning models for predicting oxidation behavior in RHEAs and RCCAs.
+* Explore correlations between alloy composition, oxidation conditions, and oxidation resistance.
+* Support data-driven screening and design of refractory alloys for high-temperature applications.
 
 ## Citation
 
 If you use this dataset in your research, please cite the original publication:
 
-> S. Gorsse et al., "Advancing Refractory High Entropy Alloy Development with AI-Predictive Models for High Temperature Oxidation Resistance," Scripta Materialia, vol. 255, 2025. DOI: [10.1016/j.scriptamat.2024.116394](https://doi.org/10.1016/j.scriptamat.2024.116394).
+> S. Gorsse et al., "Advancing Refractory High Entropy Alloy Development with AI-Predictive Models for High Temperature Oxidation Resistance," *Scripta Materialia*, vol. 255, 2025. DOI: [10.1016/j.scriptamat.2024.116394](https://doi.org/10.1016/j.scriptamat.2024.116394).
 
 ## License
 
