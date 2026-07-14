@@ -2,11 +2,7 @@
 
 ## Overview
 
-This repository contains the experimental database used in the study *"Advancing Refractory High-Entropy Alloy Development with AI-Predictive Models for High-Temperature Oxidation Resistance"*. The database was designed to train and validate machine learning models for predicting oxidation behavior in Refractory High-Entropy Alloys (RHEAs) and Refractory Complex Concentrated Alloys (RCCAs).
-
-The scope of this dataset is limited to **isothermal oxidation experiments conducted in air**. Non-isothermal oxidation tests, cyclic oxidation tests, and oxidation experiments performed under atmospheres other than air were not included, in order to maintain consistency across the compiled records.
-
-The dataset provides a coordinated and machine-readable compilation of oxidation data collected from published literature and is intended as a resource for researchers in materials science, particularly those focusing on high-temperature alloy design and oxidation resistance.
+This repository contains the experimental database used in the study *"Advancing Refractory High-Entropy Alloy Development with AI-Predictive Models for High-Temperature Oxidation Resistance"*. The database was designed to train and validate machine learning models for predicting specific mass gain due to oxidation in Refractory High-Entropy Alloys (RHEAs) and Refractory Complex Concentrated Alloys (RCCAs). It is a valuable resource for researchers in materials science, particularly those focusing on high-temperature alloy applications.
 
 ## Contents
 
@@ -35,11 +31,10 @@ The database comprises **886 observations** from published literature, detailing
 
    * Temperature (°C).
    * Time (hours).
-   * Isothermal oxidation in air.
 
 4. **Target Property**:
 
-   * Specific mass change due to oxidation (mg/cm²).
+   * Specific mass change due to oxidation in air (mg/cm²).
 
 ### File Details
 
@@ -52,7 +47,7 @@ The database comprises **886 observations** from published literature, detailing
 | `element`                       | Molar concentrations of 11 elements, including Al, Cr, Hf, Mo, Nb, Si, Ta, Ti, V, W, and Zr.                                                                                                                          |
 | `Temperature (C)`               | Isothermal oxidation test temperature in °C.                                                                                                                                                                          |
 | `time (h)`                      | Oxidation duration in hours.                                                                                                                                                                                          |
-| `specific mass change (mg/cm2)` | Net specific mass change measured after oxidation exposure.                                                                                                                                                           |
+| `specific mass change (mg/cm2)` | Net specific mass change measured after oxidation exposure in air.                                                                                                                                                           |
 | `source`                        | Reference source for the data.                                                                                                                                                                                        |
 
 ## Notes on Data Interpretation
