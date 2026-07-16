@@ -82,7 +82,7 @@ The dataset can be used to:
 * Explore correlations between alloy composition, oxidation conditions, and oxidation resistance.
 * Support data-driven screening and design of refractory alloys for high-temperature applications.
 
-## Requirements
+## Pakage Requirements for the Jupyter Notebook
 
 The accompanying analysis notebook was developed using Python 3.8. The main Python packages required for data loading, preprocessing, visualization, and dimensionality reduction are listed below:
 
