@@ -37,9 +37,6 @@ The database comprises **886 observations** from published literature, detailing
 
    * Specific mass change due to oxidation in air (mg/cm²).
 
-### File Details
-
-#### `alloy_oxidation_886_202406.csv` and `alloy_oxidation_886_202406_with_metadata.json`
 
 
 | Column Name                     | Description                                                                                                                                                                                                                                                        |
