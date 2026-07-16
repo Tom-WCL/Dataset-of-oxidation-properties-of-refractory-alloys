@@ -82,6 +82,25 @@ The dataset can be used to:
 * Explore correlations between alloy composition, oxidation conditions, and oxidation resistance.
 * Support data-driven screening and design of refractory alloys for high-temperature applications.
 
+##Requirements
+
+The accompanying analysis notebook was developed using Python 3.8. The main Python packages required for data loading, preprocessing, visualization, and dimensionality reduction are listed below:
+
+python >= 3.8
+pandas >= 1.4.2
+numpy >= 1.22.3
+matplotlib >= 3.5.2
+seaborn >= 0.13.2
+scikit-learn >= 1.2.2
+umap-learn >= 0.5.4
+
+These packages are used for the following purposes:
+
+pandas and numpy: data loading, manipulation, and numerical operations.
+matplotlib and seaborn: data visualization.
+scikit-learn: data preprocessing, including feature standardization.
+umap-learn: dimensionality reduction and visualization of the compositional/experimental data space.
+
 ## Citation
 
 If you use this dataset in your research, please cite the original publication:
