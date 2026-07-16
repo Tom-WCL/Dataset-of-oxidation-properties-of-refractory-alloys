@@ -96,10 +96,10 @@ The accompanying analysis notebook was developed using Python 3.8. The main Pyth
 
 These packages are used for the following purposes:
 
-pandas and numpy: data loading, manipulation, and numerical operations.
-matplotlib and seaborn: data visualization.
-scikit-learn: data preprocessing, including feature standardization.
-umap-learn: dimensionality reduction and visualization of the compositional/experimental data space.
+* pandas and numpy: data loading, manipulation, and numerical operations.
+* matplotlib and seaborn: data visualization.
+* scikit-learn: data preprocessing, including feature standardization.
+* umap-learn: dimensionality reduction and visualization of the compositional/experimental data space.
 
 ## Citation
 
