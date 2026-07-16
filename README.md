@@ -2,14 +2,14 @@
 
 ## Overview
 
-This repository contains the experimental database used in the study *"Advancing Refractory High-Entropy Alloy Development with AI-Predictive Models for High-Temperature Oxidation Resistance"*. The database was designed to train and validate machine learning models for predicting specific mass gain due to oxidation in Refractory High-Entropy Alloys (RHEAs) and Refractory Complex Concentrated Alloys (RCCAs). It is a valuable resource for researchers in materials science, particularly those focusing on high-temperature alloy applications.
+This repository contains the experimental database used in the study *"Advancing Refractory High-Entropy Alloy Development with AI-Predictive Models for High-Temperature Oxidation Resistance"*. The database was designed to train and validate machine learning models for predicting specific mass change due to oxidation in Refractory High-Entropy Alloys (RHEAs) and Refractory Complex Concentrated Alloys (RCCAs). It is a valuable resource for researchers in materials science, particularly those focusing on high-temperature alloy applications.
 
 ## Contents
 
 * `data/`
 
   * `alloy_oxidation_886_202406.csv`: Contains the experimental data in CSV format.
-  * `alloy_oxidation_886_202406.json`: Contains the experimental data in JSON format.
+  * `alloy_oxidation_886_202406_with_metadata.json`: Contains the experimental data in JSON format.
   * `data_analysis.ipynb`: A Jupyter notebook illustrating basic dataset statistics, distributions, and example data-loading workflows for exploratory analysis.
 * `README.md`: Documentation of the dataset.
 
