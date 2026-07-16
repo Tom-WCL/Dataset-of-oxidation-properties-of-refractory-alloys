@@ -19,47 +19,47 @@
             },
             {
                 "name": "Al",
-                "description": "Molar concentration of aluminum (Al) in the alloy."
+                "description": "Atomic percent of aluminum (Al) in the alloy."
             },
             {
                 "name": "Cr",
-                "description": "Molar concentration of chromium (Cr) in the alloy."
+                "description": "Atomic percent of chromium (Cr) in the alloy."
             },
             {
                 "name": "Hf",
-                "description": "Molar concentration of hafnium (Hf) in the alloy."
+                "description": "Atomic percent of hafnium (Hf) in the alloy."
             },
             {
                 "name": "Mo",
-                "description": "Molar concentration of molybdenum (Mo) in the alloy."
+                "description": "Atomic percent of molybdenum (Mo) in the alloy."
             },
             {
                 "name": "Nb",
-                "description": "Molar concentration of niobium (Nb) in the alloy."
+                "description": "Atomic percent of niobium (Nb) in the alloy."
             },
             {
                 "name": "Si",
-                "description": "Molar concentration of silicon (Si) in the alloy."
+                "description": "Atomic percent of silicon (Si) in the alloy."
             },
             {
                 "name": "Ta",
-                "description": "Molar concentration of tantalum (Ta) in the alloy."
+                "description": "Atomic percent of tantalum (Ta) in the alloy."
             },
             {
                 "name": "Ti",
-                "description": "Molar concentration of titanium (Ti) in the alloy."
+                "description": "Atomic percent of titanium (Ti) in the alloy."
             },
             {
                 "name": "V",
-                "description": "Molar concentration of vanadium (V) in the alloy."
+                "description": "Atomic percent of vanadium (V) in the alloy."
             },
             {
                 "name": "W",
-                "description": "Molar concentration of tungsten (W) in the alloy."
+                "description": "Atomic percent of tungsten (W) in the alloy."
             },
             {
                 "name": "Zr",
-                "description": "Molar concentration of zirconium (Zr) in the alloy."
+                "description": "Atomic percent of zirconium (Zr) in the alloy."
             },
             {
                 "name": "temperature",
