@@ -6,11 +6,9 @@ This repository contains the experimental database used in the study *"Advancing
 
 ## Contents
 
-* `data/`
-
-  * `alloy_oxidation_886_202406.csv`: Contains the experimental data in CSV format.
-  * `alloy_oxidation_886_202406_with_metadata.json`: Contains the experimental data in JSON format.
-  * `data_analysis.ipynb`: A Jupyter notebook illustrating basic dataset statistics, distributions, and example data-loading workflows for exploratory analysis.
+* `alloy_oxidation_886_202406.csv`: Contains the experimental data in CSV format.
+* `alloy_oxidation_886_202406_with_metadata.json`: Contains the experimental data in JSON format.
+* `data_analysis.ipynb`: A Jupyter notebook illustrating basic dataset statistics, distributions, and example data-loading workflows for exploratory analysis.
 * `README.md`: Documentation of the dataset.
 
 ## Dataset Description
