@@ -39,11 +39,8 @@ The database comprises **886 observations** from published literature, detailing
 
 ### File Details
 
-#### `alloy_oxidation_886_202406.csv` and `alloy_oxidation_886_202406.json`
+#### `alloy_oxidation_886_202406.csv` and `alloy_oxidation_886_202406_with_metadata.json`
 
-### File Details
-
-#### `alloy_oxidation_886_202406.csv` and `alloy_oxidation_886_202406.json`
 
 | Column Name                     | Description                                                                                                                                                                                                                                                        |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
